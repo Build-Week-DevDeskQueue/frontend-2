@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Icon } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import logo from '../dev_desk_logo.png';
+import { NavLink } from 'react-router-dom';
+import logo from '../dev_desk_logo.png';
+
 
 const useStyles = makeStyles(theme => ({
   navRoot: {
@@ -12,8 +15,7 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2)
   },
   buttonColor: {
-    color: '#E4137B',
-    textDecoration: 'none'
+    color: '#E4137B'
   },
   navTitle: {
     flexGrow: 1
@@ -25,21 +27,16 @@ const useStyles = makeStyles(theme => ({
     margin: 10,
     width: 160,
     height: 60
-  },
-  linkAlign: {
-    display: 'flex',
-    justifyContent: 'space-between'
   }
 }));
 
 const NavBar = () => {
   const classes = useStyles();
-  const [nav] = useState();
   return (
     <main>
       <div className="navRoot">
         <AppBar position="static" className={classes.navColors}>
-          <Toolbar className={classes.linkAlign}>
+          <Toolbar>
             <img src={logo} alt="navBarLogo" height="60" />
 
             <NavLink to="/" className={classes.buttonColor}>
@@ -77,16 +74,25 @@ const NavBar = () => {
                 </Button>
               </Typography>
             </NavLink>
+
+            <NavLink to="/signin" className={classes.buttonColor}>
+              <Typography variant="h6" className={classes.navTitle}>
+                <Button color="inherit" className={classes.buttonColor}>
+                  Sign In
+                </Button>
+              </Typography>
+            </NavLink>
           </Toolbar>
         </AppBar>
       </div>
-
-      {/*<Route exact path="/" component={Dashboard} />*/}
-      {/*<Route exact path="/open" component={OpenIssues} />*/}
-      {/*<Route exact path="/resolved" component={ResolvedIssues} />*/}
-      {/*<Route exact path="/new" component={NewIssue} />*/}
     </main>
   );
 };
 
 export default NavBar;
+
+// const mapStateToProps = state => ({
+//   signedIn: state.loginReducer.isLogIn
+// });
+
+// export default connect(mapStateToProps, { setLogIn })(Navigation);
