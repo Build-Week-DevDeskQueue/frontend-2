@@ -1,8 +1,13 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+<<<<<<< HEAD
 import { NavLink } from 'react-router-dom';
 import logo from '../dev_desk_logo.png';
+=======
+import logo from '../dev_desk_logo.png';
+
+>>>>>>> 3311b0a1f729a3a99d786f271d8f74438c67b4fe
 
 const useStyles = makeStyles(theme => ({
   navRoot: {
@@ -12,8 +17,7 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2)
   },
   buttonColor: {
-    color: '#E4137B',
-    textDecoration: 'none'
+    color: '#E4137B'
   },
   navTitle: {
     flexGrow: 1
@@ -25,10 +29,6 @@ const useStyles = makeStyles(theme => ({
     margin: 10,
     width: 160,
     height: 60
-  },
-  linkAlign: {
-    display: 'flex',
-    justifyContent: 'space-between'
   }
 }));
 
@@ -38,8 +38,9 @@ const NavBar = () => {
     <main>
       <div className="navRoot">
         <AppBar position="static" className={classes.navColors}>
-          <Toolbar className={classes.linkAlign}>
+          <Toolbar>
             <img src={logo} alt="navBarLogo" height="60" />
+<<<<<<< HEAD
 
             <NavLink to="/" className={classes.buttonColor}>
               <Typography variant="h6" className={classes.navTitle} to="/">
@@ -84,6 +85,32 @@ const NavBar = () => {
                 </Button>
               </Typography>
             </NavLink>
+=======
+            <Typography variant="h6" className={classes.navTitle} to="/">
+              <Button color="inherit" className={classes.buttonColor}>
+                Dashboard
+              </Button>
+            </Typography>
+            <Typography variant="h6" className={classes.navTitle} to="/open">
+              <Button color="inherit" className={classes.buttonColor}>
+                Open Issues
+              </Button>
+            </Typography>
+            <Typography
+              variant="h6"
+              className={classes.navTitle}
+              to="/resolved"
+            >
+              <Button color="inherit" className={classes.buttonColor}>
+                Resolved Issue
+              </Button>
+            </Typography>
+            <Typography variant="h6" className={classes.navTitle} to="/new">
+              <Button color="inherit" className={classes.buttonColor}>
+                New Issue
+              </Button>
+            </Typography>
+>>>>>>> 3311b0a1f729a3a99d786f271d8f74438c67b4fe
           </Toolbar>
         </AppBar>
       </div>
