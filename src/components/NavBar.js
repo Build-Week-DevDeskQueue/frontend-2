@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Icon } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import logo from '../dev_desk_logo.png';
-import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   navRoot: {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useForm from 'react-hook-form';
 import axios from 'axios';
 import { Paper, Typography, TextField, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -45,7 +46,11 @@ const useStyles = makeStyles(theme => ({
 
 const SignIn = () => {
   const classes = useStyles();
-  const [user, setUser] = useState({ username: '', password: '', token: '' });
+  const [user, setUser] = useState({ username: '', userNameError: '', password: '', password });
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => {
+    console.log(data);
+  };
 
   const handleChange = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -63,7 +68,7 @@ const SignIn = () => {
 
       <Paper className={classes.root}>
         <form
-          onSubmit={event => handleSubmit(event)}
+          onSubmit={handleSubmit(onSubmit)}
           className={classes.container}
           noValidate
           autoComplete="off"
@@ -80,29 +85,53 @@ const SignIn = () => {
             <TextField
               name="username"
               label="Username"
+              ref={register}
               type="text"
               className={classes.textField}
               InputLabelProps={{
                 shrink: true
               }}
               margin="normal"
-              value={user.username || ''}
-              onChange={event => handleChange(event)}
+              // value={user.username || ''}
+              // onChange={register}
             />
           </div>
           <div className={classes.centered}>
+            {/*<TextField*/}
+            {/*  name="password"*/}
+            {/*  label="Password"*/}
+            {/*  ref={register}*/}
+            {/*  type="password"*/}
+            {/*  className={classes.textField}*/}
+            {/*  InputLabelProps={{*/}
+            {/*    shrink: true*/}
+            {/*  }}*/}
+            {/*  margin="normal"*/}
+            {/*  // value={user.password || ''}*/}
+            {/*  // onChange={event => handleChange(event)}*/}
+            {/*/>*/}
+
+
+
             <TextField
+
               name="password"
               label="Password"
+              id="standard-error-helper-text"
               type="password"
+              helperText="Incorrect entry"
               className={classes.textField}
               InputLabelProps={{
                 shrink: true
               }}
               margin="normal"
-              value={user.password || ''}
-              onChange={event => handleChange(event)}
+              value={user.password}
+              // onChange={event => handleChange(event)}
             />
+
+
+
+
           </div>
           <div className={classes.centered}>
             <Button
