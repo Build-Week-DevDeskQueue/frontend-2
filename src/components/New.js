@@ -1,8 +1,9 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(
+const useStyles = makeStyles(theme => ({
   container: {
     width: '100%',
     height: '800px',
@@ -38,7 +39,7 @@ const useStyles = makeStyles(
     borderRadius: '5px',
     background: 'pink'
   }
-);
+}));
 
 const NewIssueForm = () => {
   const classes = useStyles();
