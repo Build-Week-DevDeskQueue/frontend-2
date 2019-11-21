@@ -8,7 +8,7 @@
 
 [Deployed Front End]()
 <br />
-[DevDesk Queue: Marketing Site]()
+[DevDesk Queue: Marketing Site](https://flamboyant-noyce-8e4b0e.netlify.com/)
 <br />
 [Back End](http://devdesk-queue.surge.sh/)
 
@@ -26,7 +26,7 @@
 
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
-- [Material UI]
+- [Material UI](https://material-ui.com/)
 
 ## Installation
 
