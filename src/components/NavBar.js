@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, Icon } from '@material-ui/core';
+import React from 'react';
+import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import logo from '../dev_desk_logo.png';
 import { NavLink } from 'react-router-dom';
+import logo from '../dev_desk_logo.png';
 
 const useStyles = makeStyles(theme => ({
   navRoot: {
@@ -34,7 +34,6 @@ const useStyles = makeStyles(theme => ({
 
 const NavBar = () => {
   const classes = useStyles();
-  const [nav] = useState();
   return (
     <main>
       <div className="navRoot">
@@ -77,16 +76,25 @@ const NavBar = () => {
                 </Button>
               </Typography>
             </NavLink>
+
+            <NavLink to="/signin" className={classes.buttonColor}>
+              <Typography variant="h6" className={classes.navTitle}>
+                <Button color="inherit" className={classes.buttonColor}>
+                  Sign In
+                </Button>
+              </Typography>
+            </NavLink>
           </Toolbar>
         </AppBar>
       </div>
-
-      {/*<Route exact path="/" component={Dashboard} />*/}
-      {/*<Route exact path="/open" component={OpenIssues} />*/}
-      {/*<Route exact path="/resolved" component={ResolvedIssues} />*/}
-      {/*<Route exact path="/new" component={NewIssue} />*/}
     </main>
   );
 };
 
 export default NavBar;
+
+// const mapStateToProps = state => ({
+//   signedIn: state.loginReducer.isLogIn
+// });
+
+// export default connect(mapStateToProps, { setLogIn })(Navigation);
