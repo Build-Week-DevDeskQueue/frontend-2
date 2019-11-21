@@ -1,6 +1,6 @@
 # DevDesk Queue - Frontend
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+![Netlify Status]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
 
 ---
 
@@ -8,9 +8,9 @@
 
 [Deployed Front End]()
 <br />
-[DevDesk Queue: Marketing Site](https://flamboyant-noyce-8e4b0e.netlify.com/)
+[DevDesk Queue: Marketing Site]()
 <br />
-[Back End](http://devdesk-queue.surge.sh/)
+[Back End]
 
 **Example User**
 <br />
@@ -26,7 +26,7 @@
 
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
-- [Material UI](https://material-ui.com/)
+- [Material UI]
 
 ## Installation
 

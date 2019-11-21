@@ -10,10 +10,12 @@ export function validateUsername(values) {
 }
 
 // Validates password
-export function validatePassword(values) {
+export function validateEmail(values) {
   const errors = {};
-  if (!values.password) {
-    errors.password = 'Password is required!';
+  if (!values.email) {
+    errors.email = 'Email address is required!';
+  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    errors.email = 'Email address is invalid!';
   }
   return errors;
 }
