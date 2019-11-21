@@ -8,8 +8,8 @@ import AppRouter from './components/AppRouter';
 const App = () => {
   return (
     <div>
-      <NewIssueForm />
       <SignIn />
+      <NewIssueForm />
       <AppRouter />
     </div>
   );
