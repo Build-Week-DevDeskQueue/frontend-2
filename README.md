@@ -1,16 +1,16 @@
 # DevDesk Queue - Frontend
 
-![Netlify Status]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
 
 ---
 
 **DevDesk Queue** is a targeted CRUD application that allows **users** to add new tickets to the application regarding any coding questions you have as a user and admins and helpers to answer them via **admin answer**. .
 
-[Deployed Front End]()
+[Deployed Front End](https://musing-austin-4b3d5c.netlify.com/signin)
 <br />
 [DevDesk Queue: Marketing Site]()
 <br />
-[Back End]
+http://devdesk-queue.surge.sh/
 
 **Example User**
 <br />
@@ -26,7 +26,7 @@
 
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
-- [Material UI]
+- [Material UI](https://material-ui.com)
 
 ## Installation
 
