@@ -26,7 +26,7 @@ http://devdesk-queue.surge.sh/
 
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
-- [Material UI]
+- [Material UI](https://material-ui.com)
 
 ## Installation
 
