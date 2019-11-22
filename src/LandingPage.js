@@ -92,7 +92,7 @@ const LandingPage = props => {
                 <h4>Get Started solving your coding questions below</h4>
             </header>
 
-            <div className="logo"><img src={dev_desk_logo} height="150px" width="400px" /></div>
+            {/*<div className="logo"><img src={dev_desk_logo} height="150px" width="400px" /></div>*/}
 
             <br />
             <h2>DASHBOARD</h2>

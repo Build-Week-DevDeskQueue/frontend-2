@@ -60,12 +60,12 @@ const NavBar = () => {
                 to="/resolved"
               >
                 <Button color="inherit" className={classes.buttonColor}>
-                  Resolved Issues
+                  Resolved Issue
                 </Button>
               </Typography>
             </NavLink>
 
-            <NavLink to="/add-ticket" className={classes.buttonColor}>
+            <NavLink to="/new" className={classes.buttonColor}>
               <Typography variant="h6" className={classes.navTitle} to="/new">
                 <Button color="inherit" className={classes.buttonColor}>
                   New Issue
@@ -80,13 +80,11 @@ const NavBar = () => {
                 </Button>
               </Typography>
             </NavLink>
-
-            <Typography variant="h6" className={classes.navTitle} to="/new">
+            <Typography variant="h6" className={classes.navTitle} to="/">
               <Button color="inherit" className={classes.buttonColor}>
                 Logout
               </Button>
             </Typography>
-
           </Toolbar>
         </AppBar>
       </div>
