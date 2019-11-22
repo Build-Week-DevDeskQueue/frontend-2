@@ -87,9 +87,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// const mapStateToProps = state => ({
-//   signedIn: state.loginReducer.isLogIn
-// });
-
-// export default connect(mapStateToProps, { setLogIn })(Navigation);
