@@ -80,11 +80,6 @@ const NavBar = () => {
           </Toolbar>
         </AppBar>
       </div>
-
-      {/*<Route exact path="/" component={Dashboard} />*/}
-      {/*<Route exact path="/open" component={OpenIssues} />*/}
-      {/*<Route exact path="/resolved" component={ResolvedIssues} />*/}
-      {/*<Route exact path="/new" component={NewIssue} />*/}
     </main>
   );
 };

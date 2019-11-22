@@ -1,51 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import axios from 'axios';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-
+// context state management
+export const UserContext = createContext();
 
 const useStyles = makeStyles(theme => ({
   container: {
     display: 'flex',
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   },
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
-    width: 200,
+    width: 200
   },
   button: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(1)
   },
   input: {
-    display: 'none',
-  },
+    display: 'none'
+  }
 }));
 
-const LoginForm = (props) => {
+const LoginForm = props => {
   const classes = useStyles();
-  const [user, setUser] = useState({ username: '', password: '' })
-
+  const [user, setUser] = useState({ username: '', password: '' });
 
   const handleChange = event => {
-    setUser(
-      {
-        ...user,
-        [event.target.name]: event.target.value
-      }
-    );
+    setUser({
+      ...user,
+      [event.target.name]: event.target.value
+    });
   };
 
   const login = event => {
     event.preventDefault();
-    console.log('user', user)
+    console.log('user', user);
     axios
-      .post("https://devdesk-backend.herokuapp.com/api/auth/login", user)
+      .post('https://devdesk-backend.herokuapp.com/api/auth/login', user)
       .then(result => {
-        console.log(result.data)
-        localStorage.setItem("token", result.data.token)
-        props.history.push("/");
+        console.log(result.data);
+        localStorage.setItem('token', result.data.token);
+        props.history.push('/');
       })
       .catch(error => {
         if (error.response) {
@@ -59,20 +57,25 @@ const LoginForm = (props) => {
           console.log('Error', error.message);
         }
         console.log(error.config);
-      })
-
+      });
   };
 
   return (
     <div className="login-form">
+      <UserContext.Provider value={[user, setUser]}>
+        {props.children}
+      </UserContext.Provider>
       <header>
         <h1>Sign in to DevDesk Queue</h1>
         <h4>-or Register Below-</h4>
       </header>
 
-      <form onSubmit={login} className={classes.container} noValidate autoComplete="off">
-
-
+      <form
+        onSubmit={login}
+        className={classes.container}
+        noValidate
+        autoComplete="off"
+      >
         <TextField
           required
           id="filled-required"
@@ -96,15 +99,17 @@ const LoginForm = (props) => {
           value={user.password}
           onChange={handleChange}
         />
-        <Button variant="contained"
+        <Button
+          variant="contained"
           type="submit"
           color="primary"
-          className={classes.button}>
+          className={classes.button}
+        >
           Submit
-       </Button>
+        </Button>
       </form>
     </div>
   );
-}
+};
 
 export default LoginForm;

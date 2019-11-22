@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
 import TicketDetails from "./TicketDetails";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
-
-
+// create state management. to implement more state management. 
+export const TicketContext = createContext();
+// implement context api consumer function.
 export default function UserTickets(props) {
   const [tickets, setTickets] = useState([])
 
@@ -40,6 +41,9 @@ export default function UserTickets(props) {
           </>
         ))}
       </div>
+      <TicketContext.Provider value={[tickets,setTickets]}>
+      {props.children}
+      </TicketContext.Provider>
     </>
   );
 }

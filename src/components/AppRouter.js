@@ -4,7 +4,7 @@ import './navbar.css';
 import LandingPage from '../LandingPage';
 import SignIn from './SignIn';
 import Dashboard from './Dashboard';
-import OpenIssues from './Open';
+import Issue from './Issue';
 import ResolvedIssues from './Resolved';
 import PrivateRoute from '../utils/PrivateRoute';
 import App from '../App';
@@ -16,7 +16,7 @@ const AppRouter = () => (
     <Route exact path="/signin" component={LoginForm} />
     <PrivateRoute path="/" component={LandingPage} />
 
-    <PrivateRoute exact path="/open" component={OpenIssues} />
+    <PrivateRoute exact path="/open" component={Issue} />
     <PrivateRoute exact path="/resolved" component={ResolvedIssues} />
     <PrivateRoute path="/dashboard" component={Dashboard} />
   </Switch>

@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import TextField from '@material-ui/core/TextField'
 import { makeStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button';
 import { Link, withRouter } from 'react-router-dom';
 
+import { TicketContext } from "../LandingPage";
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -19,6 +20,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function EditTicketForm({ listTickets, match, updateTicket }) {
   const [data, setData] = useState({ listTickets })
+  // const [data, setData] = useContext(TicketContext);
 
   console.log('ticketformdata', data)
   useEffect(() => {
