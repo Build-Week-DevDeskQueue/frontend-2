@@ -6,6 +6,7 @@ import SignIn from './SignIn';
 import Dashboard from './Dashboard';
 import OpenIssues from './Open';
 import ResolvedIssues from './Resolved';
+import NewIssueForm from './New';
 import PrivateRoute from '../utils/PrivateRoute';
 
 const AppRouter = () => (
@@ -13,7 +14,7 @@ const AppRouter = () => (
     <Route exact path="/signin" component={SignIn} />
     <PrivateRoute exact path="/open" component={OpenIssues} />
     <PrivateRoute exact path="/resolved" component={ResolvedIssues} />
-
+    <PrivateRoute path="/new" component={NewIssueForm} />
     <PrivateRoute path="/dashboard" component={Dashboard} />
   </Switch>
 );
