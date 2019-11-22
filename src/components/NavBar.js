@@ -82,29 +82,9 @@ const NavBar = () => {
             </NavLink>
             <Typography variant="h6" className={classes.navTitle} to="/">
               <Button color="inherit" className={classes.buttonColor}>
-                Dashboard
+                Logout
               </Button>
             </Typography>
-            <Typography variant="h6" className={classes.navTitle} to="/open">
-              <Button color="inherit" className={classes.buttonColor}>
-                Open Issues
-              </Button>
-            </Typography>
-            <Typography
-              variant="h6"
-              className={classes.navTitle}
-              to="/resolved"
-            >
-              <Button color="inherit" className={classes.buttonColor}>
-                Resolved Issue
-              </Button>
-            </Typography>
-            <Typography variant="h6" className={classes.navTitle} to="/new">
-              <Button color="inherit" className={classes.buttonColor}>
-                New Issue
-              </Button>
-            </Typography>
-
           </Toolbar>
         </AppBar>
       </div>
