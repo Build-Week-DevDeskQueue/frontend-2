@@ -1,20 +1,23 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './Navbar.css';
-
+import './navbar.css';
+import LandingPage from '../LandingPage';
 import SignIn from './SignIn';
 import Dashboard from './Dashboard';
-import OpenIssues from './Open';
+import Issue from './Issue';
 import ResolvedIssues from './Resolved';
-import NewIssueForm from './New';
 import PrivateRoute from '../utils/PrivateRoute';
+import App from '../App';
+import LoginForm from '../LoginForm';
 
 const AppRouter = () => (
   <Switch>
-    <Route exact path="/signin" component={SignIn} />
-    <PrivateRoute exact path="/open" component={OpenIssues} />
+
+    <Route exact path="/signin" component={LoginForm} />
+    <PrivateRoute path="/" component={LandingPage} />
+
+    <PrivateRoute exact path="/open" component={Issue} />
     <PrivateRoute exact path="/resolved" component={ResolvedIssues} />
-    <PrivateRoute path="/new" component={NewIssueForm} />
     <PrivateRoute path="/dashboard" component={Dashboard} />
   </Switch>
 );
