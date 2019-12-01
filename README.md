@@ -8,7 +8,7 @@
 
 [Deployed Front End](https://clever-lamarr-286d79.netlify.com)
 <br />
-[DevDesk Queue: Marketing Site]()
+[DevDesk Queue: Marketing Site](https://flamboyant-noyce-8e4b0e.netlify.com/)
 <br />
 [Deployed Back End](http://devdesk-queue.surge.sh/)
 
@@ -40,7 +40,7 @@ npm start
 ## Credits
 
 ### Team
-
+See Marketing About Page and Org Chart...
 
 ---
 
