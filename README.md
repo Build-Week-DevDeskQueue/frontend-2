@@ -6,17 +6,18 @@
 
 **DevDesk Queue** is a targeted CRUD application that allows **users** to add new tickets to the application regarding any coding questions you have as a user and admins and helpers to answer them via **admin answer**. .
 
-[Deployed Front End](https://clever-lamarr-286d79.netlify.com)
+[Deployed Front End](https://devdeskq.now.sh) via ZEIT, earlier Netlify version can be found in other readme files...
 <br />
 [DevDesk Queue: Marketing Site](https://flamboyant-noyce-8e4b0e.netlify.com/)
+ZEIT
 <br />
 [Deployed Back End](http://devdesk-queue.surge.sh/)
 
 **Example User**
 <br />
-**Login**: David.Smith
+**Login**: derrick
 <br />
-**Password**: Passwrd9
+**Password**: asdf
 
 ## Screenshots
 
