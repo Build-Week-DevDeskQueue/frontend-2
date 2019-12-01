@@ -104,7 +104,7 @@ const LandingPage = props => {
             <h1>Here is the Current Open Ticket List</h1>
             <br />
             <h4>Add, Save, or Delete from Tickets from Your Database.
-        Admins may log in and Update Your Ticket once Received.</h4>
+        <strong>Admins</strong> may log in and Update Your Ticket once Received.</h4>
             <Route
                 exact path="/"
                 render={props => {
@@ -151,7 +151,7 @@ const LandingPage = props => {
                         addTicket={addTicket} />
                 }}
             />
-            <h4>Logout </h4>
+            <h4 class="logout" onClick={Logout}>Logout </h4>
         </>
     );
 };

@@ -21,7 +21,8 @@ form {
 }
 
 body {
-    background-color: #cc338b;}
+    background-color: #cc338b;
+  }
 
 .add-ticket a {
   display: flex;
@@ -69,15 +70,21 @@ button {
 .ticket-card {
   display: flex;
   flex-flow: column wrap;
-  background: #222;
+  background: whitesmoke;
   border-radius: 4px;
-  border: 2px solid #aaa;
-  color: whitesmoke;
+  border: 1px solid #aaa;
+  color: #222;
   height: 160px;
   text-align: center;
   justify-content: center;
-  opacity: 0.8;
+  opacity: 0.9;
   margin: 20px 145px 20px;
+  box-shadow: 2px 1px #aaa;
+  text-decoration: none;
+}
+
+.ticket-card a {
+  text-decoration: none;
 }
 
 .delete-btn {
