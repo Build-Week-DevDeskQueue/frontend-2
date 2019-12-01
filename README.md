@@ -6,7 +6,7 @@
 
 **DevDesk Queue** is a targeted CRUD application that allows **users** to add new tickets to the application regarding any coding questions you have as a user and admins and helpers to answer them via **admin answer**. .
 
-[Deployed Front End](https://musing-austin-4b3d5c.netlify.com/signin)
+[Deployed Front End](https://clever-lamarr-286d79.netlify.com)
 <br />
 [DevDesk Queue: Marketing Site]()
 <br />
