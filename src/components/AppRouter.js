@@ -13,7 +13,7 @@ import LoginForm from '../LoginForm';
 const AppRouter = () => (
   <Switch>
 
-    <Route exact path="/signin" component={LoginForm} />
+    <Route exact path="/login" component={LoginForm} />
     <PrivateRoute path="/" component={LandingPage} />
 
     <PrivateRoute exact path="/open" component={OpenIssues} />
