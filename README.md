@@ -1,3 +1,9 @@
+# DevDesk Queue - Frontend
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+
+---
+
 **DevDesk Queue** is a targeted CRUD application that allows **users** to add new tickets to the application regarding any coding questions you have as a user and admins and helpers to answer them via **admin answer**. .
 
 [Deployed Front End](https://clever-lamarr-286d79.netlify.com)
@@ -16,14 +22,13 @@
 
 ## Tech/framework used
 
-<b>Stack and Front/Back End Built with:</b>
+<b>Built with:</b>
 
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
+- [Context API](https://reactjs.org/)
 - [Material UI](https://material-ui.com)
-
--[Node.js](https://nodejs.org/en/)
-
+- [Node](https://nodejs.org)
 ## Installation
 
 ```
@@ -63,3 +68,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
