@@ -22,12 +22,13 @@
 
 ## Tech/framework used
 
-<b>Front End Built with:</b>
+<b>Built with:</b>
 
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
+- [Context API](https://reactjs.org/)
 - [Material UI](https://material-ui.com)
-
+- [Node](https://nodejs.org)
 ## Installation
 
 ```
