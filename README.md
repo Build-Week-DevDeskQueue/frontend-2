@@ -9,7 +9,6 @@
 [Deployed Front End](https://devdeskq.now.sh) via ZEIT, earlier Netlify version can be found in other readme files...
 <br />
 [DevDesk Queue: Marketing Site](https://flamboyant-noyce-8e4b0e.netlify.com/)
-ZEIT
 <br />
 [Deployed Back End](http://devdesk-queue.surge.sh/)
 
